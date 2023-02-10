@@ -4,8 +4,7 @@
                 ". nav nav nav nav nav ."
                 ". header header header header header ."
                 ". . . . . . ."
-                ". . . . . . ."
-                ". section section section aside aside ."
+                ". section section . aside aside ."
                 ". . . . aside aside ."
                 ". article article article aside aside ."
                 ". . . . . . ."
@@ -27,10 +26,9 @@ body{
     background-repeat: no-repeat;
     align-content: center;
     background-size: cover;
- platzhalteryrechts
 }
 
-.header, .nav, .section, .aside, .article, .footerOwnDesign {
+.header, .nav, .section1, .section2, .section3, section4, .aside, .article, .footerOwnDesign {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +88,17 @@ body{
     grid-area: nav;
 }
 
-.section {
+.section1 {
     grid-area: section;
+}
+.section2 {
+    grid-area: section2;
+}
+.section3 {
+    grid-area: section3;
+}
+.section4 {
+    grid-area: section4;
 }
 
 .aside {

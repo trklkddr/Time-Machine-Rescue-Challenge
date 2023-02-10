@@ -6,11 +6,38 @@
   <link rel="stylesheet" href="Mainsheet.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+                ". nav nav nav nav nav ."
+                ". . . . . . ."
+                ". section section . aside aside ."
+                ". . . . . . ."
+                ". article article . section2 section2 ."
+                ". . . . . . ."
+                ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign .";
+      justify-content: stretch;
+      align-items: center;
+      padding: 6px;
+      width: 97vw;
+      height: 97vh;
+      grid-gap: 3px;
+      border-radius: 3px;
+      color: whitesmoke;
+      font-size: x-large;
+    }
+
+
+  </style>
+
+
 
 </head>
 <body>
 <div class="container">
-  <div class="header">SUBPAGE1</div>
 
     <div class="nav">
       <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
@@ -30,7 +57,7 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" href="Subpage1.html">
+            <a class="navbar-item" href="News.html">
               SUBPAGE1
             </a>
             <a class="navbar-item" href="Subpage2.html">
@@ -66,7 +93,8 @@
     </div>
 
 
-  <div class="section">&lt;section&gt;</div>
+  <div class="section1">&lt;section&gt;</div>
+  <div class="section2">&lt;section2&gt;</div>
   <div class="aside">&lt;aside&gt;</div>
   <div class="article">&lt;article&gt;</div>
   <div class="footerOwnDesign">&lt;footer&gt;</div>
