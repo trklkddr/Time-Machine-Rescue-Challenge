@@ -28,7 +28,7 @@ body{
     background-size: cover;
 }
 
-.header, .nav, .section1, .section2, .section3, section4, .aside, .article, .footerOwnDesign {
+.header, .nav, .section1, .section2, .section3, .section4, .section5, .section6, .aside, .article, .footerOwnDesign {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +99,12 @@ body{
 }
 .section4 {
     grid-area: section4;
+}
+.section5 {
+    grid-area: section5;
+}
+.section6 {
+    grid-area: section6;
 }
 
 .aside {
