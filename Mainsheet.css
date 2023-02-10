@@ -3,12 +3,12 @@
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(7, 1fr);
     grid-template-areas:
-                "platzhaltery platzhalterx platzhalterx platzhalterx platzhalterx platzhalterx"
-                "platzhaltery header header header header header"
-                "platzhaltery nav nav nav nav nav"
-                "platzhaltery section section section aside aside"
-                "platzhaltery section section section aside aside"
-                "platzhaltery article article article aside aside"
+                "platzhaltery platzhalterx  platzhalterx    platzhalterx    platzhalterx    platzhalterx"
+                "platzhaltery header        header          header          header          header"
+                "platzhaltery nav           nav             nav             nav             nav"
+                "platzhaltery section       section         section         aside           aside"
+                "platzhaltery section       section         section         aside           aside"
+                "platzhaltery article       article         article         aside           aside"
                 "platzhaltery footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign";
     justify-items: stretch;
     align-items: stretch;
@@ -19,7 +19,6 @@
     border-radius: 3px;
     color: whitesmoke;
     font-size: x-large;
-
 }
 
 body{
