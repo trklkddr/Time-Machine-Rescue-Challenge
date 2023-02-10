@@ -20,7 +20,8 @@
     font-size: x-large;
 }
 
-body{
+
+html{
     background-image: url("pics/hintergrund2048.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@ body{
     background-size: cover;
 }
 
-.header, .nav, .section1, .section2, .section3, section4, .aside, .article, .footerOwnDesign {
+.header, .nav, .section1, .section2, .section3, .section4, .section5, .aside, .article, .footerOwnDesign {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +37,6 @@ body{
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-
-
 
 }
 
@@ -89,7 +88,7 @@ body{
 }
 
 .section1 {
-    grid-area: section;
+    grid-area: section1;
 }
 .section2 {
     grid-area: section2;
@@ -99,6 +98,18 @@ body{
 }
 .section4 {
     grid-area: section4;
+}
+.section5 {
+    grid-area: section5;
+}
+.section6 {
+    grid-area: section6;
+}
+.section7 {
+    grid-area: section7;
+}
+.section8 {
+    grid-area: section8;
 }
 
 .aside {
