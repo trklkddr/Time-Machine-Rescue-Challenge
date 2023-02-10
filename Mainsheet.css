@@ -1,5 +1,6 @@
 .container {
     display: grid;
+
     grid-template-areas:
                 ". nav nav nav nav nav ."
                 ". header header header header header ."
@@ -9,6 +10,8 @@
                 ". article article article aside aside ."
                 ". . . . . . ."
                 ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign .";
+
+
     justify-items: stretch;
     align-items: stretch;
     padding: 6px;
@@ -28,17 +31,17 @@ body{
     background-size: cover;
 }
 
-.header, .nav, .section1, .section2, .section3, section4, .aside, .article, .footerOwnDesign {
+.header, .nav, .section1, .section2, .section3, .section4, .aside, .article, .footerOwnDesign {
     display: flex;
     align-items: center;
     justify-content: center;
+    /*
     border: 1px solid black;
+
+     */
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-
-
-
 }
 
 .foreground {
