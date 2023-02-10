@@ -3,7 +3,7 @@
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(7, 1fr);
     grid-template-areas:
-                "platzhalterx platzhalterx platzhalterx platzhalterx platzhalterx platzhalterx"
+                "platzhaltery platzhalterx platzhalterx platzhalterx platzhalterx platzhalterx"
                 "platzhaltery header header header header header"
                 "platzhaltery nav nav nav nav nav"
                 "platzhaltery section section section aside aside"
@@ -37,24 +37,34 @@ body{
     justify-content: center;
     border: 1px solid black;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+
+
 
 }
+
+.foreground {
+    backdrop-filter: blur(10px);
+}
+
+
 .platzhalterx {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     border-radius: 1px;
-    background-color: black;
+    background-color: transparent;
     }
+
 .platzhaltery {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     border-radius: 1px;
-    background-color: black;
+    background-color: transparent;
     }
 
 
