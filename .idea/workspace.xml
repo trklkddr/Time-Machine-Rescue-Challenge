@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="badf86ec-436f-4725-93f4-11d7802cc9ca" name="Changes" comment="Bilder" />
+    <list default="true" id="dab16152-f843-4f48-929c-030681f1d8a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mainsheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mainsheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subpage1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Subpage1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subpage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Subpage2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subpage3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Subpage3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subpage4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Subpage4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MarcRoggee/Desktop/Time-Machine-Rescue-Challenge/pics",
+    "last_opened_file_path": "C:/Java Kurs/Woche5/FrontendProjekt/TMRC/Time-Machine-Rescue-Challenge/pics",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -43,11 +51,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MarcRoggee\Desktop\Time-Machine-Rescue-Challenge\pics" />
       <recent name="C:\Java Kurs\Woche5\FrontendProjekt\TMRC\Time-Machine-Rescue-Challenge\pics" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\MarcRoggee\Desktop\Time-Machine-Rescue-Challenge\pics" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,24 +63,11 @@
       <option name="presentableId" value="Default" />
       <updated>1676022161430</updated>
       <workItem from="1676022162414" duration="413000" />
-      <workItem from="1676022591934" duration="3085000" />
+      <workItem from="1676022591934" duration="7827000" />
     </task>
-    <task id="LOCAL-00001" summary="Bilder">
-      <created>1676030997528</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676030997528</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="git ignore" />
-    <MESSAGE value="Bilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bilder" />
   </component>
 </project>
