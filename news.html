@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>semantic elements grid</title>
+  <link rel="stylesheet" href="mainsheet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <style>
+
+    .container {
+
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+
+      grid-template-areas:
+                ". nav nav nav nav nav ."
+                ". . . section1 . . ."
+                ". . section2 section2 section2 . ."
+                ". . section3 section3 section3 . ."
+                ". . section4 section4 section4 . ."
+                ". . section5 section5 section5 . ."
+                ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign .";
+      <!--
+      justify-content: stretch;
+      align-items: center;
+      padding: 6px;
+      width: 97vw;
+      height: 97vh;
+      grid-gap: 3px;
+      border-radius: 3px;
+      color: whitesmoke;
+      font-size: x-large;
+      -->
+    }
+
+
+  </style>
+
+
+
+</head>
+<body>
+<div class="container">
+
+  <div class="nav">
+    <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="./pics/TeamLogo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!--
+          <a class="navbar-item" href="index.html">
+              HOME
+          </a>
+          -->
+          <a class="navbar-item" href="news.html">
+            NEWS
+          </a>
+          <a class="navbar-item" href="world.html">
+            WORLD
+          </a>
+          <a class="navbar-item" href="classes.html">
+            CLASSES
+          </a>
+          <a class="navbar-item" href="aboutus.html">
+            ABOUT US
+          </a>
+
+        </div>
+        <div class="navbar-end">
+          <!--
+          <div class="navbar-item">
+              <div class="buttons">
+                  <a class="button is-primary">
+                      <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                      Log in
+                  </a>
+              </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </nav>
+
+
+
+  </div>
+
+  <div class="section1">
+    News
+  </div>
+  <div class="section2">
+    We are proud to announce that the presale starts now!
+    The first 10000 customers get an Epic WORM Mount!!
+    For more information follow us on our socials.
+  </div>
+  <div class="section3">
+    Beta Test 2 ended. Thank you for your participation and the amazing Feedback. We will start working on the issues
+    immediately to bring you the best experience for the next playtest.
+  </div>
+  <div class="section4">
+    Release date is out NOW! 31/03/2057
+    We will publish more information about the presale soon.
+  </div>
+  <div class="section5">
+    Dear friends , the long wait will soon come to an end. It is unbelievable how you have supported us.
+    Thanks to all of you! We can tell you today that we have completed all our beta and alpha tests and we are now
+    taking further steps to release the game soon. For more information, follow us on social media.
+  </div>
+  <div class="footerOwnDesign">Footer</div>
+</div>
+</body>
+</html>
+
