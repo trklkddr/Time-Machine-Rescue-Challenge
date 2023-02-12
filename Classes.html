@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>semantic elements grid</title>
-  <link rel="stylesheet" href="Mainsheet.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <title>semantic elements grid</title>
+    <link rel="stylesheet" href="mainsheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-  <style>
+    <style>
 
-    .container {
-      display: grid;
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-areas:
+        .container {
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas:
                 ". . nav nav nav . ."
                 ". . section5 section5 section5 . ."
                 ". . section6 section6 section6 . ."
                 ". . section7 section7 section7 . ."
                 ". . section8 section8 section8 . ."
                 ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign .";
-      padding: 6px;
-      width: 97vw;
-      height: 97vh;
-      grid-gap: 3px;
-      border-radius: 3px;
-      color: whitesmoke;
-      font-size: x-large;
-    }
+            padding: 6px;
+            width: 97vw;
+            height: 97vh;
+            grid-gap: 3px;
+            border-radius: 3px;
+            color: whitesmoke;
+            font-size: x-large;
+        }
 
-    .section5, .section6, .section7, .section8 {
-      display: block;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid black;
-      border-radius: 6px;
-      background-color: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
-    }
+        .section5, .section6, .section7, .section8 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 6px;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
 
 
 
-  </style>
+    </style>
 
 
 
@@ -47,98 +47,101 @@
 <body>
 <div class="container">
 
-  <div class="nav">
-    <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <!-- IMAGE FÜR LOGO FEHLT-->
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>
+    <div class="nav">
+        <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./pics/TeamLogo.png" width="112" height="28">
+                </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-           data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                   data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="News.html">
-            SUBPAGE1
-          </a>
-          <a class="navbar-item" href="Classes.html">
-            SUBPAGE2
-          </a>
-          <a class="navbar-item" href="Subpage3.html">
-            SUBPAGE3
-          </a>
-          <a class="navbar-item" href="Subpage4.html">
-            SUBPAGE4
-          </a>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <!--
+                    <a class="navbar-item" href="index.html">
+                        HOME
+                    </a>
+                    -->
+                    <a class="navbar-item" href="news.html">
+                        NEWS
+                    </a>
+                    <a class="navbar-item" href="world.html">
+                        WORLD
+                    </a>
+                    <a class="navbar-item" href="classes.html">
+                        CLASSES
+                    </a>
+                    <a class="navbar-item" href="aboutus.html">
+                        ABOUT US
+                    </a>
 
-        </div>
-        <div class="navbar-end">
-          <!--
-          <div class="navbar-item">
-              <div class="buttons">
-                  <a class="button is-primary">
-                      <strong>Sign up</strong>
-                  </a>
-                  <a class="button is-light">
-                      Log in
-                  </a>
-              </div>
-          </div>
-          -->
-        </div>
-      </div>
-    </nav>
+                </div>
+                <div class="navbar-end">
+                    <!--
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
 
 
 
-  </div>
-  <div class="section5 has-text-centered">
-    <p class="is-size-2">Olem</p>
-    <img src="pics/Krieger512x512.jpg" alt="">
-    <div>Olem is a specialist in Melee and keeping his Allies Safe. With his massive Statue he is able to swing his Huge Hammer "Mock" with abnormal Strength!
-      He will be the first to strike in fights to keep his Enemy focused on him at all times.
     </div>
-  </div>
-  <div class="section6 has-text-centered">
-    <p class="is-size-2">Pope</p>
-    <img src="pics/HolyPriest512x512.jpg" alt="">
-    <div>Pope is the servant of God and was sent into battle by God himself.
-      With his extraordinary willpower and powerful healing spells, he is
-      incredibly important for the whole group, especially in tight situations.
-      With his   god-created relict "Dope"- he cleans up every situation.</div>
+    <div class="section5 has-text-centered">
+        <p class="is-size-2">Olem</p>
+        <img src="pics/Krieger512x512.jpg" alt="">
+        <div>Olem is a specialist in Melee and keeping his Allies Safe. With his massive Statue he is able to swing his Huge Hammer "Mock" with abnormal Strength!
+            He will be the first to strike in fights to keep his Enemy focused on him at all times.
+        </div>
+    </div>
+    <div class="section6 has-text-centered">
+        <p class="is-size-2">Pope</p>
+        <img src="pics/HolyPriest512x512.jpg" alt="">
+        <div>Pope is the servant of God and was sent into battle by God himself.
+            With his extraordinary willpower and powerful healing spells, he is
+            incredibly important for the whole group, especially in tight situations.
+            With his   god-created relict "Dope"- he cleans up every situation.</div>
 
 
-  </div>
-  <div class="section7 has-text-centered">
-    <p class="is-size-2">Nadya</p>
-    <img src="pics/Assasine512x512.jpg" alt="">
-    <div>Nadya is a specialized Shadow-Shifter and fights with her beloved throwing Glaive "Blaat" and her Dagger "Suuk".
-      Nadya reigns in the shadows and her enemies won´t recognise her until it is too late!
-      She sneaks up behind her enemies to slit their throates and grab their money!
-      She owns a huge Villa as well!</div>
-  </div>
-  <div class="section8 has-text-centered">
-    <p class="is-size-2">Rattighast</p>
-    <img src="pics/RatSlinger21x512.jpg" alt="">
-    <div>Rattighast is a laboratory made species. He was made for fast paced and intense fighting.
-      He has 2 Tails and 4 Legs which makes his insane Speed.
-      He is able to flank Enemies as quick as his rifle Shoots!
-      His ability with his rifle"Maggie" are unmatched.
-      Normally he kills his Enemies before they even noticed him.
+    </div>
+    <div class="section7 has-text-centered">
+        <p class="is-size-2">Nadya</p>
+        <img src="pics/Assasine512x512.jpg" alt="">
+        <div>Nadya is a specialized Shadow-Shifter and fights with her beloved throwing Glaive "Blaat" and her Dagger "Suuk".
+            Nadya reigns in the shadows and her enemies won´t recognise her until it is too late!
+            She sneaks up behind her enemies to slit their throates and grab their money!
+            She owns a huge Villa as well!</div>
+    </div>
+    <div class="section8 has-text-centered">
+        <p class="is-size-2">Rattighast</p>
+        <img src="pics/RatSlinger21x512.jpg" alt="">
+        <div>Rattighast is a laboratory made species. He was made for fast paced and intense fighting.
+            He has 2 Tails and 4 Legs which makes his insane Speed.
+            He is able to flank Enemies as quick as his rifle Shoots!
+            His ability with his rifle"Maggie" are unmatched.
+            Normally he kills his Enemies before they even noticed him.
+        </div>
+
     </div>
 
-  </div>
-
-  <div class="footerOwnDesign">Footer</div>
+    <div class="footerOwnDesign">Footer</div>
 </div>
 </body>
 </html>
-
 
