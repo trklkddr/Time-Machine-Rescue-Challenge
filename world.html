@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>semantic elements grid</title>
+  <link rel="stylesheet" href="mainsheet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    .container {
+      grid-template-areas:
+                ". nav nav nav nav nav ."
+                ". header header header header header ."
+                ". header header header header header ."
+                ". header header header header header ."
+
+                /*". section1 section1 section1 section1 section1 ."*/
+                ". section2 section2 section2 section2 section2 ."
+                ". section3 section3 . section4 section4 ."
+                ". section5 section5 . section1 section1 ."
+
+
+      /* ". article article .  aside aside ."
+       ". article article article aside aside ."
+       ". . . . . . ."
+       ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign ."*/;
+      display: grid;
+      justify-items: stretch;
+      align-items: stretch;
+      padding: 6px;
+      width: 97vw;
+      height: 97vh;
+      grid-gap: 3px;
+      border-radius: 3px;
+      color: whitesmoke;
+      font-size: x-large;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <div class="header">WORLD</div>
+
+  <div class="nav">
+    <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="./pics/TeamLogo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!--
+          <a class="navbar-item" href="index.html">
+              HOME
+          </a>
+          -->
+          <a class="navbar-item" href="news.html">
+            NEWS
+          </a>
+          <a class="navbar-item" href="world.html">
+            WORLD
+          </a>
+          <a class="navbar-item" href="classes.html">
+            CLASSES
+          </a>
+          <a class="navbar-item" href="aboutus.html">
+            ABOUT US
+          </a>
+
+        </div>
+        <div class="navbar-end">
+          <!--
+          <div class="navbar-item">
+              <div class="buttons">
+                  <a class="button is-primary">
+                      <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                      Log in
+                  </a>
+              </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+  <div class="section2">&lt;Textarea&gt;</div>
+  <div class="section3">&lt;VulkanBild&gt;</div>
+  <div class="section4">&lt;EisBild&gt;</div>
+  <div class="section5">&lt;Text1&gt;</div>
+  <div class="section1">&lt;Text2&gt;</div>
+
+
+
+
+</div>
+</body>
+</html>
+
