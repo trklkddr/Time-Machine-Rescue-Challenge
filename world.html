@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
   <meta charset="UTF-8">
   <title>semantic elements grid</title>
   <link rel="stylesheet" href="mainsheet.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <style>
     .container {
+      grid-template-columns: repeat(7, 1fr);
       grid-template-areas:
-                ". nav nav nav nav nav ."
-                ". header header header header header ."
-                ". header header header header header ."
-                ". header header header header header ."
-
-                /*". section1 section1 section1 section1 section1 ."*/
-                ". section2 section2 section2 section2 section2 ."
+                "nav nav nav nav nav nav nav"
+                "nav nav nav nav nav nav nav"
+                ". . . . . . ."
+                ". . . section1 . . ."
+                ". . section2 section2 section2 . ."
                 ". section3 section3 . section4 section4 ."
-                ". section5 section5 . section1 section1 ."
+                ". section5 section5 . section6 section6 ."
 
 
       /* ". article article .  aside aside ."
@@ -25,7 +26,7 @@
        ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign ."*/;
       display: grid;
       justify-items: stretch;
-      align-items: stretch;
+      align-items: start;
       padding: 6px;
       width: 97vw;
       height: 97vh;
@@ -34,12 +35,40 @@
       color: whitesmoke;
       font-size: x-large;
     }
+
+    .section1, .section5, .section6  {
+      display: block;
+      border: 1px solid black;
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .section2{
+      border: 1px solid black;
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+
+    }
+    .section3, .section4{
+      border: 1px solid black;
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+
+    }
+
+    .imgWidth{
+      height: 40%;
+
+    }
+
   </style>
 
 </head>
 <body>
 <div class="container">
-  <div class="header">WORLD</div>
 
   <div class="nav">
     <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
@@ -100,12 +129,48 @@
 
 
 
+  <div class="section1 has-text-centered">
+    <div>WORLD</div>
+  </div>
 
-  <div class="section2">&lt;Textarea&gt;</div>
-  <div class="section3">&lt;VulkanBild&gt;</div>
-  <div class="section4">&lt;EisBild&gt;</div>
-  <div class="section5">&lt;Text1&gt;</div>
-  <div class="section1">&lt;Text2&gt;</div>
+  <div class="section2 has-text-centered">
+    
+    <img src="pics/WorldMap1024x1024.jpg">
+    
+  </div>
+  <div class="section3 has-text-centered">
+
+    <img class="imgWidth" src="pics/GameLandScapeDark1024x1024.jpg" alt="">
+
+
+  </div>
+  <div class="section4 has-text-centered">
+    <img class="imgWidth" src="pics/Ice%20Landscape1024x1024.jpg" alt="">
+
+  </div>
+  <div class="section5 has-text-centered">
+    <div class="is-size-2">Xantoras</div>
+    <div>
+      In this landscape temperatures of up to 50 degrees Celsius prevail.
+      In certain places, however, higher temperatures are also possible.
+      In addition to giant dragons and cyclops live here probably the most
+      dangerous way of life that can be found.
+      The mighty lizard people, which rise from the earth's crust and try to
+      kill you and your friends.
+    </div>
+  </div>
+  <div class="section6 has-text-centered">
+    <div class="is-size-2">Frozterian</div>
+    <div>
+      Huge white expanses full of snow and ice. This area is not for every man.
+      Dead limbs are part of everyday life here. If you don't prepare properly,
+      you can quickly join the frozen mammoths. This area is also home to the
+      great white mammoth rabbit.
+    </div>
+  </div>
+
+
+  </div>
 
 
 
