@@ -20,12 +20,11 @@
     font-size: x-large;
 }
 @media screen and (max-width: 800px) {
-    .containerNavBar {
-        flex-wrap: wrap;
+
     }
-}
+
 @media screen and (min-width: 800px) and (max-width: 1024px) {
-    .containerNavBar {
+    .container {
 
     }
 }
