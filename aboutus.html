@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="mainsheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
-        .container{
+        .container {
             display: grid;
             grid-template-rows: repeat(8, 1fr);
             justify-content: stretch;
@@ -18,6 +18,7 @@
     ". . . section3 . . . "
     ". . . section4 . . . ";
         }
+
         .section1, .section2, .section3, .section4 {
             grid-template-columns: repeat(7, 1fr);
         }
@@ -30,7 +31,7 @@
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
             // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
+            $navbarBurgers.forEach(el => {
                 el.addEventListener('click', () => {
 
                     // Get the target from the "data-target" attribute
@@ -51,12 +52,13 @@
 <div class="containerNavBar">
 
     <div class="nav">
-        <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
+        <nav class="navbar" style="background-color: transparent" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <img src="./pics/TeamLogo.png" width="112" height="28" alt="Logo">
                 </a>
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                   data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -85,24 +87,25 @@
             </div>
         </nav>
     </div>
-<div class="container">
+    <div class="container">
 
 
-    <div class="section1">
-        The Head of TMRC, Lead Game Developer and the Brain of the Project.
-        Our Pope Mr. Tarik Alkad-Dri
+        <div class="section1 has-text-centered">
+            The Head of TMRC, Lead Game Developer and the Brain of the Project.
+            Our Pope Mr. Tarik Alkad-Dri
+        </div>
+        <div class="section2 has-text-centered">The Graphical Genius of TMRC. Leading Game Design Engineer and Game
+            Mechanic Developer
+            Mr. Christian Lange
+        </div>
+        <div class="section3 has-text-centered">
+            Game Concept Designer, Concept of Art Director and Game Developer
+            Mr. René Martinek
+        </div>
+        <div class="section4 has-text-centered">Game Concept Designer, Concept of Art Director and Game Developer
+            Mr. Marc Rogée
+        </div>
     </div>
-    <div class="section2 has-text-centered">The Graphical Genius of TMRC. Leading Game Design Engineer and Game Mechanic Developer
-        Mr. Christian Lange
-    </div>
-    <div class="section3">
-        Game Concept Designer, Concept of Art Director and Game Developer
-        Mr. René Martinek
-    </div>
-    <div class="section4">Game Concept Designer, Concept of Art Director and Game Developer
-        Mr. Marc Rogée
-    </div>
-    <!--<div class="footerOwnDesign">&lt;footer&gt;</div>-->
 </div>
 </body>
 </html>
