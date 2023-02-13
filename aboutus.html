@@ -5,12 +5,34 @@
     <title>semantic elements grid</title>
     <link rel="stylesheet" href="mainsheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .container{
 
+            grid-template-areas:
+    ". . nav nav nav . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . section1 . . . "
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . section2 . . . "
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . section3 . . . "
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . section4 . . . ";
+        }
+        .section1, .section2, .section3, .section4 {
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+    </style>
 
 </head>
 <body>
 <div class="container">
-    <div class="header">SUBPAGE4</div>
+    <!--<div class="header">SUBPAGE4</div>-->
 
     <div class="nav">
         <nav class="navbar" style="background-color: transparent" role="navigation" aria-label="main navigation">
@@ -72,10 +94,21 @@
     </div>
 
 
-    <div class="section1">&lt;section&gt;</div>
-    <div class="aside">&lt;aside&gt;</div>
-    <div class="article">&lt;article&gt;</div>
-    <div class="footerOwnDesign">&lt;footer&gt;</div>
+    <div class="section1">
+        The Head of TMRC, Lead Game Developer and the Brain of the Project.
+        Our Pope Mr. Tarik Alkad-Dri
+    </div>
+    <div class="section2 has-text-centered">The Graphical Genius of TMRC. Leading Game Design Engineer and Game Mechanic Developer
+        Mr. Christian Lange
+    </div>
+    <div class="section3">
+        Game Concept Designer, Concept of Art Director and Game Developer
+        Mr. René Martinek
+    </div>
+    <div class="section4">Game Concept Designer, Concept of Art Director and Game Developer
+        Mr. Marc Rogée
+    </div>
+    <!--<div class="footerOwnDesign">&lt;footer&gt;</div>-->
 </div>
 </body>
 </html>
