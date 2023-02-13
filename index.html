@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>️‍🔥🔥🔥🔥🔥🔥</title>
+    <title>️‍Home</title>
     <link rel="stylesheet" href="mainsheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
 <style>
 .container{
+    display: grid;
     grid-template-areas:
     ". . nav nav nav . ."
     ". . . . . . ."
@@ -19,22 +20,55 @@
     ". . section3 section3 section3 . . "
     ". . . . . . ."
     ". . section4 section4 section4 . . ";
+
+    .section2, .section2, .section3, .section4
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: stretch;
+    align-items: center;
 }
 
 
 </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
+
 </head>
 <body>
 
+<div class="containerNavBar">
 
-<div class="container">
-
-
-    <div class="nav">
-        <nav class="navbar" style="background-color: transparent" role="navigation" aria-label="main navigation">
+    <div class="nav is-active">
+        <nav class="navbar is-active"  style="background-color: transparent" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <img src="./pics/TeamLogo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
 
             </div>
@@ -59,26 +93,17 @@
                         ABOUT US
                     </a>
 
+
                 </div>
                 <div class="navbar-end">
-                    <!--
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                                Log in
-                            </a>
-                        </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </nav>
-
-
     </div>
+
+<div class="container">
+
+
 
     <div class="section2 has-text-centered">Join the Forces and Explore Yqeria
 

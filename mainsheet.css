@@ -19,6 +19,16 @@
     color: whitesmoke;
     font-size: x-large;
 }
+@media screen and (max-width: 800px) {
+    .containerNavBar {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .containerNavBar {
+
+    }
+}
 
 
 html{
@@ -29,7 +39,7 @@ html{
     background-size: cover;
 }
 
-.header, .nav, .section1, .section2, .section3, .section4, .section5, .aside, .article, .footerOwnDesign {
+.header, .section1, .section2, .section3, .section4, .section5, .aside, .article, .footerOwnDesign {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +47,16 @@ html{
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+}
 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .foreground {

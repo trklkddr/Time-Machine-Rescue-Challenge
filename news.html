@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>semantic elements grid</title>
+    <title>News</title>
     <link rel="stylesheet" href="mainsheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
@@ -19,8 +19,7 @@
                 ". . section2 section2 section2 . ."
                 ". . section3 section3 section3 . ."
                 ". . section4 section4 section4 . ."
-                ". . section5 section5 section5 . ."
-                ". footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign footerOwnDesign .";
+                ". . section5 section5 section5 . .";
         <!--
         justify-content: stretch;
         align-items: center;
@@ -33,15 +32,40 @@
         font-size: x-large;
         -->
         }
+        .section1, .section2, .section3, .section4, .section5 {
+            grid-template-columns: repeat(7, 1fr);
+        }
 
 
     </style>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
 
 </head>
 <body>
-<div class="container">
+<div class="containerNavBar">
 
     <div class="nav">
         <nav class="navbar"  style="background-color: transparent" role="navigation" aria-label="main navigation">
@@ -49,13 +73,12 @@
                 <a class="navbar-item" href="index.html">
                     <img src="./pics/TeamLogo.png" width="112" height="28">
                 </a>
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
+
             </div>
 
             <div id="navbarBasicExample" class="navbar-menu">
@@ -80,25 +103,12 @@
 
                 </div>
                 <div class="navbar-end">
-                    <!--
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                                Log in
-                            </a>
-                        </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </nav>
-
-
-
     </div>
+
+<div class="container">
 
     <div class="section1">
         News
@@ -121,7 +131,6 @@
         Thanks to all of you! We can tell you today that we have completed all our beta and alpha tests and we are now
         taking further steps to release the game soon. For more information, follow us on social media.
     </div>
-    <div class="footerOwnDesign">Footer</div>
 </div>
 </body>
 </html>
